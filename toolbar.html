@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+  </head>
+  <body>
+
+<div class="sidebar branding-below">
+  <div class="block col-contain">
+    <div class="col-one">
+      <p>Format as:</p>
+      <p><button id="asCode">Code</button></p>
+      <p><button id="asUrl">URL</button></p>
+    </div>
+  </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+  $(function() {
+    $('#asCode').click(function() {
+      google.script.run.applyCodeFormatting()
+    })
+    $('#asUrl').click(function() {
+      google.script.run.applyUrlFormatting()
+    })
+  })
+</script>
+  
+  </body>
+</html>
+
+
